@@ -21,9 +21,12 @@ $ pip install -r requirements.txt
 
 добавить файл .env в корневую папку проекта и прописать настройки:
 ```
-SECRET_KEY='YOUR_SECRET_KEY'
-DATABASE_URI='sqlite:///FILENAME.db'
-MOVIE_API='API_KEY'
+SECRET_KEY=secret_key  #required
+MOVIE_API=api_key      #required
+DB_BASE=dialect+driver
+DB_USER=login:password
+DB_HOST=host:port
+DB_NAME=db_name
 ```
 запуск проекта:
 ```
